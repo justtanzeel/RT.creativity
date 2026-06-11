@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RT Designer — Creative Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<nav>
+  <a href="#" class="nav-logo">RT<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#carousel">Shoe Series</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for Freelance Work</div>
+    <h1>RT<br><em>Designer</em> —<br><span class="hl">Visual Artist</span></h1>
+    <p class="hero-sub">Posters, brochures, banners, AI creatives & carousel content that make brands impossible to ignore.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-outline">Let's Talk</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item"><div class="stat-num">9+</div><div class="stat-label">Projects Shown</div></div>
+    <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Services</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Satisfaction</div></div>
+  </div>
+</section>
+<div class="marquee-wrap"><div class="marquee-track">
+  <div class="marquee-item">Poster Design <span>✦</span></div>
+  <div class="marquee-item">Brochure Design <span>✦</span></div>
+  <div class="marquee-item">AI Creative Design <span>✦</span></div>
+  <div class="marquee-item">Shoe Carousel Series <span>✦</span></div>
+  <div class="marquee-item">Banner Design <span>✦</span></div>
+  <div class="marquee-item">Poster Design <span>✦</span></div>
+  <div class="marquee-item">Brochure Design <span>✦</span></div>
+  <div class="marquee-item">AI Creative Design <span>✦</span></div>
+  <div class="marquee-item">Shoe Carousel Series <span>✦</span></div>
+  <div class="marquee-item">Banner Design <span>✦</span></div>
+</div></div>
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <div><div class="section-label">What I Do</div><h2 class="section-title">Services I<br>Offer</h2></div>
+    <p class="section-sub">Every project is a chance to create something extraordinary. Here's what I specialize in.</p>
+  </div>
+  <div class="services-grid reveal" id="servicesGrid">
+    <div class="service-card" onclick="filterAndGo('poster')" style="cursor:pointer;"><div class="service-num">01</div><div class="service-icon">🎨</div><h3>Poster Design</h3><p>Eye-catching posters for food brands, events, promotions and campaigns that demand attention.</p><div class="card-cta">View Work &#8594;</div></div>
+    <div class="service-card" onclick="filterAndGo('brochure')" style="cursor:pointer;"><div class="service-num">02</div><div class="service-icon">📄</div><h3>Brochure Design</h3><p>Professionally structured brochures that present your business or service beautifully.</p><div class="card-cta">View Work &#8594;</div></div>
+    <div class="service-card" onclick="filterAndGo('banner')" style="cursor:pointer;"><div class="service-num">03</div><div class="service-icon">🖼️</div><h3>Banner Design</h3><p>High-impact digital and print banners designed to capture attention across all platforms.</p><div class="card-cta">View Work &#8594;</div></div>
+    <div class="service-card" onclick="filterAndGo('ai')" style="cursor:pointer;"><div class="service-num">04</div><div class="service-icon">🤖</div><h3>AI Creative Design</h3><p>AI-generated visuals blended with professional design for truly unique, cinematic results.</p><div class="card-cta">View Work &#8594;</div></div>
+    <div class="service-card" onclick="document.getElementById('carousel').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;"><div class="service-num">05</div><div class="service-icon">👟</div><h3>Carousel Design</h3><p>Scroll-stopping multi-slide carousel content for products, brands and social media campaigns.</p><div class="card-cta">View Carousel &#8594;</div></div>
+  </div>
+</section>
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-header reveal">
+    <div><div class="section-label">Featured Work</div><h2 class="section-title">Recent<br>Projects</h2></div>
+    <p class="section-sub">Real work across posters, brochures, AI creatives and carousel series.</p>
+  </div>
+  <div class="filter-tabs reveal">
+    <button class="filter-btn active" data-filter="all">All Work</button>
+    <button class="filter-btn" data-filter="poster">Posters</button>
+    <button class="filter-btn" data-filter="ai">AI Creative</button>
+    <button class="filter-btn" data-filter="brochure">Brochure</button>
+    <button class="filter-btn" data-filter="banner">Banner</button>
+  </div>
+  <div class="portfolio-grid reveal">
+    <div class="p-item p-item-a" data-cat="poster">
+      <img src="assets/images/burger_poster.jpg" alt="Burger Poster" loading="lazy">
+      <div class="p-cat-badge">Poster</div>
+      <div class="p-overlay"><div class="p-overlay-tag">Poster Design</div><div class="p-overlay-title">Super Delicious Burger</div></div>
+    </div>
+    <div class="p-item p-item-b" data-cat="poster">
+      <img src="assets/images/school_poster.jpg" alt="School Poster" loading="lazy">
+      <div class="p-cat-badge">Poster</div>
+      <div class="p-overlay"><div class="p-overlay-tag">Poster Design</div><div class="p-overlay-title">ZK Academy — Education Poster</div></div>
+    </div>
+    <div class="p-item p-item-c" data-cat="ai">
+      <img src="assets/images/shoe_skull.jpg" alt="Shoe Realistic" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Shoe Design</div><div class="p-overlay-title">Skull Edition — Realistic</div></div>
+    </div>
+    <div class="p-item p-item-d" data-cat="ai">
+      <img src="assets/images/akatsuki_1.png" alt="Shoe 1" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Carousel</div><div class="p-overlay-title">Akatuski Itachi Edition</div></div>
+    </div>
+    <div class="p-item p-item-e" data-cat="ai">
+      <img src="assets/images/akatsuki_2.png" alt="Shoe 2" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Carousel</div><div class="p-overlay-title">Red Storm Edition</div></div>
+    </div>
+    <div class="p-item p-item-f" data-cat="ai">
+      <img src="assets/images/akatsuki_3.png" alt="Shoe 3" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Carousel</div><div class="p-overlay-title">Defiance — Red Smoke</div></div>
+    </div>
+    <div class="p-item p-item-g" data-cat="ai">
+      <img src="assets/images/akatsuki_4.png" alt="Shoe 4" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Carousel</div><div class="p-overlay-title">Shadow Walk Edition</div></div>
+    </div>
+    <div class="p-item p-item-h" data-cat="brochure">
+      <img src="assets/images/brochure.jpg" alt="Brochure" loading="lazy">
+      <div class="p-cat-badge">Brochure</div>
+      <div class="p-overlay"><div class="p-overlay-tag">Brochure Design</div><div class="p-overlay-title">Corporate Tri-fold Brochure</div></div>
+    </div>
+    <div class="p-item p-item-i" data-cat="ai">
+      <img src="assets/images/akatsuki_5.png" alt="Shoe 5" loading="lazy">
+      <div class="p-cat-badge">AI Creative</div>
+      <div class="p-overlay"><div class="p-overlay-tag">AI Carousel</div><div class="p-overlay-title">Akatsuki Floating Edition</div></div>
+    </div>
+
+    <div class="p-item p-item-a" data-cat="banner" style="grid-column:span 12;aspect-ratio:16/6;">
+      <img src="assets/images/bw_city_dusk.png" alt="ZK Academy Banner" loading="lazy" style="object-position:center top;">
+      <div class="p-cat-badge">Banner</div>
+      <div class="p-overlay"><div class="p-overlay-tag">Banner Design</div><div class="p-overlay-title">ZK Academy — Education Banner</div></div>
+    </div>
+  </div>
+</section>
+<section class="carousel-section" id="carousel">
+  <div class="reveal">
+    <div class="section-label">AI Shoe Series</div>
+    <h2 class="section-title">Carousel<br>Showcase</h2>
+    <p class="section-sub">A full AI-designed shoe carousel — cinematic, dark, and story-driven. Each slide tells a chapter.</p>
+  </div>
+  <div class="carousel-wrap reveal">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide"><img src="assets/images/bw_gothic_storm.png" alt="Slide 01"><div class="carousel-info"><div class="ci-tag">Slide 01 — AI Creative</div><h3>Akatuski Itachi Edition</h3><p>Born from shadows, this pair carries the weight of sacrifice. Inspired by Itachi's duality.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_akatsuki_1.png" alt="Slide 02"><div class="carousel-info"><div class="ci-tag">Slide 02 — AI Creative</div><h3>Red Storm Edition</h3><p>Every brushstroke is deliberate — black for the shadows, red for the storm.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_akatsuki_2.png" alt="Slide 03"><div class="carousel-info"><div class="ci-tag">Slide 03 — AI Creative</div><h3>Defiance — Red Smoke</h3><p>This shoe is not fashion. It is defiance. Misunderstood, unstoppable, united by conviction.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_akatsuki_3.png" alt="Slide 04"><div class="carousel-info"><div class="ci-tag">Slide 04 — AI Creative</div><h3>Shadow Walk Edition</h3><p>Each step feels like walking through smoke — unseen, yet undeniable.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_akatsuki_4.png" alt="Slide 05"><div class="carousel-info"><div class="ci-tag">Slide 05 — AI Creative</div><h3>Akatsuki Floating Edition</h3><p>Like the Akatsuki, this pair is one of one. A shadow that lingers long after the battle ends.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_akatsuki_5.png" alt="Slide 06"><div class="carousel-info"><div class="ci-tag">Slide 06 — AI Creative</div><h3>Bound By Webs — City Dusk</h3><p>Two souls collide in the city's dusk. Their bond fragile, yet unbreakable.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_bw_1.png" alt="Slide 07"><div class="carousel-info"><div class="ci-tag">Slide 07 — AI Creative</div><h3>Red Strands — Woven Like Fate</h3><p>Every web is a tether — holding them together, even as the world tries to pull them apart.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_bw_2.png" alt="Slide 08"><div class="carousel-info"><div class="ci-tag">Slide 08 — AI Creative</div><h3>Paint Splatters — Memory Heel</h3><p>Love and loss drip side by side, marking the sneaker with memory.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_bw_3.png" alt="Slide 09"><div class="carousel-info"><div class="ci-tag">Slide 09 — AI Creative</div><h3>Bound By Webs — Gothic Storm</h3><p>Not about heroes. It's about connection. Some ties never break.</p></div></div>
+      <div class="carousel-slide"><img src="assets/images/c_bw_4.png" alt="Slide 10"><div class="carousel-info"><div class="ci-tag">Slide 10 — AI Creative</div><h3>Wear the Bond. Walk the Story.</h3><p>Painted Juttay — Art you can walk in. Every step tells a chapter.</p></div></div>
+    </div>
+    <div class="carousel-dots" id="carouselDots">
+      <div class="dot active" onclick="goTo(0)"></div>
+      <div class="dot" onclick="goTo(1)"></div>
+      <div class="dot" onclick="goTo(2)"></div>
+      <div class="dot" onclick="goTo(3)"></div>
+      <div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div>
+      <div class="dot" onclick="goTo(6)"></div>
+      <div class="dot" onclick="goTo(7)"></div>
+      <div class="dot" onclick="goTo(8)"></div>
+      <div class="dot" onclick="goTo(9)"></div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" onclick="prevSlide()">&#8592;</button>
+      <button class="carousel-btn" onclick="nextSlide()">&#8594;</button>
+    </div>
+  </div>
+</section>
+</section>
+<section class="process">
+  <div style="text-align:center;" class="reveal"><div class="section-label">How I Work</div><h2 class="section-title">My Process</h2></div>
+  <div class="process-steps reveal">
+    <div class="process-step"><div class="step-dot">01</div><h4>Discovery</h4><p>Understanding your brand, goals, and creative vision.</p></div>
+    <div class="process-step"><div class="step-dot">02</div><h4>Concept</h4><p>Building a clear and exciting creative direction.</p></div>
+    <div class="process-step"><div class="step-dot">03</div><h4>Design</h4><p>Bringing concepts to life with precision.</p></div>
+    <div class="process-step"><div class="step-dot">04</div><h4>Revise</h4><p>Refining until it's exactly what you envisioned.</p></div>
+    <div class="process-step"><div class="step-dot">05</div><h4>Deliver</h4><p>Final files in all formats, ready to use.</p></div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about-visual reveal">
+    <div class="about-card-main" style="padding:0;overflow:hidden;position:relative;">
+      <img src="assets/images/profile_pic.jpg" alt="RT Designer" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,transparent 100%);">
+        <div class="about-role-badge" style="margin-bottom:0.5rem;display:inline-block;">Creative Designer & AI Artist</div>
+        <div class="about-name" style="font-size:1.1rem;">RT Designer</div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:3px;">Rawalpindi, Pakistan &#127477;&#127472;</div>
+      </div>
+    </div>
+    <div class="about-floating about-floating-1"><strong>9+</strong>Projects Showcased</div>
+    <div class="about-floating about-floating-2"><strong>5&#9733;</strong>Client Rating</div>
+  </div>
+  <div class="reveal">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Passionate<br>About Design</h2>
+    <p style="color:var(--muted);font-size:0.93rem;line-height:1.8;margin-top:1rem;margin-bottom:1.25rem;">Hi, I'm RT — a creative designer and AI visual artist based in Rawalpindi, Pakistan. I blend sharp graphic design skills with cutting-edge AI tools to deliver visuals that are both stunning and strategic.</p>
+    <p style="color:var(--muted);font-size:0.93rem;line-height:1.8;margin-bottom:1.5rem;">From bold food posters to cinematic AI shoe campaigns, school posters to corporate brochures — I deliver quality work on time, every time.</p>
+    <div class="skills-list">
+      <span class="skill-tag">Adobe Photoshop</span>
+      <span class="skill-tag">Adobe Illustrator</span>
+      <span class="skill-tag">Canva Pro</span>
+      <span class="skill-tag">AI Image Tools</span>
+      <span class="skill-tag">Typography</span>
+      <span class="skill-tag">Carousel Design</span>
+      <span class="skill-tag">Print Design</span>
+      <span class="skill-tag">Digital Graphics</span>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="contact-bg"></div>
+  <div class="contact-content reveal">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem);">Let's Work<br><span class="hl">Together</span></h2>
+    <p style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-top:1rem;">Have a project in mind? I'd love to hear about it. Let's create something amazing.</p>
+    <div style="margin-top:1.75rem;">
+      <a href="mailto:justtanzeel@gmail.com" class="contact-email">justtanzeel@gmail.com</a>
+      <div class="contact-divider">also reachable at</div>
+      <a href="mailto:tanzeelrehman116625@gmail.com" class="contact-email" style="font-size:0.9rem;">tanzeelrehman116625@gmail.com</a>
+    </div>
+    <div class="contact-actions">
+      <a href="mailto:justtanzeel@gmail.com" class="btn-primary">Send Me a Message &#8594;</a>
+      <a href="https://www.peopleperhour.com" target="_blank" class="btn-outline">Hire on PeoplePerHour</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div>&#169; 2025 RT Designer. All rights reserved.</div>
+  <div>Designed with passion in Pakistan &#127477;&#127472;</div>
+  <div><a href="mailto:justtanzeel@gmail.com">justtanzeel@gmail.com</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
